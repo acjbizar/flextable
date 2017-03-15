@@ -1,0 +1,17 @@
+
+.flextable {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+@supports(display: flex) {
+    .flextable {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flextable .col {
+        display: block;
+    }
+}
