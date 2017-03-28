@@ -1,8 +1,15 @@
 
 .flextable {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
+  display: table;
+  *overflow: auto; /* IE old */
+  table-layout: fixed;
+  width: 100%;
+}
+
+.flextable .col {
+  display: table-cell;
+  *float:left; /* IE old */
+  text-align: center;
 }
 
 @supports(display: flex) {
